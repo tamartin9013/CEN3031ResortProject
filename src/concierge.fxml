@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConciergeController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/BeachPalmsDarkenedBlurred.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="374.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Concierge Services">
+         <font>
+            <Font name="Verdana Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="462.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get to know the local area!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve Universe Land Tickets!">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve Archipelagos of Adventure Tickets!">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve seats at the local Korean BBQ! ">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="400.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please pay each respective location. ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="quantityUniLandTickets" layoutX="1050.0" layoutY="296.0" prefHeight="49.0" prefWidth="126.0" promptText="Quantity" />
+      <TextField fx:id="quantityAdvTickets" layoutX="1050.0" layoutY="386.0" prefHeight="49.0" prefWidth="126.0" promptText="Quantity" />
+      <TextField fx:id="quantityKBBQ" layoutX="1050.0" layoutY="474.0" prefHeight="49.0" prefWidth="126.0" promptText="Quantity" />
+      <Button layoutX="1028.0" layoutY="662.0" mnemonicParsing="false" onAction="#submitReservation" prefHeight="61.0" prefWidth="170.0" text="Reserve Today" />
+      <ImageView fx:id="backButton" fitHeight="94.0" fitWidth="83.0" layoutX="39.0" layoutY="682.0" onMouseClicked="#getBackHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

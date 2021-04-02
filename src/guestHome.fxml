@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuestHomeController">
+  <children>
+    <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="1.0" opacity="0.92" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <image>
+        <Image url="@resources/BeachPalmsDarkenedBlurred.jpg" />
+      </image>
+    </ImageView>
+    <HBox layoutX="242.0" layoutY="123.0" prefHeight="118.0" prefWidth="737.0">
+         <children>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to FGCU Inn!" textAlignment="CENTER">
+          <font>
+            <Font name="Verdana Bold" size="59.0" />
+          </font>
+          <cursor>
+            <Cursor fx:constant="DEFAULT" />
+          </cursor>
+        </Text>
+         </children></HBox>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1037.0" layoutY="48.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@resources/Logo.gif" />
+      </image>
+    </ImageView>
+      <Button fx:id="buttonHousekeeping" layoutX="173.0" layoutY="367.0" mnemonicParsing="false" onAction="#getHousekeepingRequest" prefHeight="118.0" prefWidth="332.0" text="Housekeeping">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonMaintenance" layoutX="705.0" layoutY="367.0" mnemonicParsing="false" onAction="#getMaintenanceRequest" prefHeight="118.0" prefWidth="332.0" text="Maintenance">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonFooServices" layoutX="173.0" layoutY="582.0" mnemonicParsing="false" onAction="#getFoodServices" prefHeight="118.0" prefWidth="332.0" text="Food Services">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonConcierge" layoutX="705.0" layoutY="575.0" mnemonicParsing="false" onAction="#getConciergeServices" prefHeight="118.0" prefWidth="332.0" text="Concierge Services">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="459.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Your Services">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+  </children>
+</AnchorPane>
